@@ -1,9 +1,7 @@
-<p-menubar [model]="items">
-    <ng-template pTemplate="start">
-
-    </ng-template>
-    <ng-template pTemplate="end">
-      <img src="assets/LOGO.png" class="profile-image" />
-    </ng-template>
-  </p-menubar>
-  
+<div class="card">
+  <p-menubar [model]="items"></p-menubar>
+</div>
+<p-sidebar [(visible)]="sidebarVisible" position="bottom">
+  <app-login></app-login>
+</p-sidebar>
+<!-- <app-login *ngIf="sidebarVisible"></app-login> -->
